@@ -9,7 +9,7 @@
     <div class="container">
       <div class="content">
         <div class="identity">
-          <h1 class="app-name">{{ APP_NAME }}</h1>
+          <img class="logo" src="/images/logo.png" alt="{{ APP_NAME }} Logo">
           <small class="title">Full-Stack Web Developer</small>
         </div>
         <ul class="links row">
