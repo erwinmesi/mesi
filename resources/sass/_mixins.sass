@@ -1,0 +1,224 @@
+// C O L O R S
+=clr($color)
+  color: $color
+=bg($color)
+  background: $color
+
+// F O N T S T Y L E S
+=f-size($size)
+  font-size: $size
+=f-wt($val)
+  font-weight: $val
+=l-ht($val)
+  line-height: $val
+=bold
+  font-weight: bold
+=bolder
+  font-weight: bolder !important
+=light
+  font-weight: light
+=lighter
+  font-weight: lighter !important
+=underlined
+  text-decoration: underline
+=italic
+  font-style: italic
+
+=char-space($val)
+  letter-spacing: $val
+
+// T E X T   T R A N S F O R M S
+=uppercase
+  text-transform: uppercase
+=lowercase
+  text-transform: lowercase
+
+// C U R S O R S
+=hand
+  cursor: pointer
+=pointer
+  cursor: default
+
+// S I Z I N G
+=square($size)
+  width: $size
+  height: $size
+=box($width, $height)
+  width: $width
+  height: $height
+=w($width)
+  width: $width
+=h($height)
+  height: $height
+
+// P O S I T I O N S
+=pos($type, $t, $r, $b, $l)
+  position: $type
+  top: $t
+  left: $l
+  right: $r
+  bottom: $b
+=abs
+  position: absolute
+=rel
+  position: relative
+=static
+  position: static
+=fixed
+  position: fixed
+=z($val)
+  z-index: $val
+
+// D I S P L A Y
+=block
+  display: block
+=none
+  display: none
+=inline-block
+  display: inline-block
+=inline
+  display: inline
+=flex
+  display: -ms-flexbox
+  display: -webkit-box
+  display: -webkit-flex
+  display: flex
+
+// flex
+=flex-a-item-start
+  -webkit-box-align: start
+  -ms-flex-align: flex-start
+  -webkit-align-items: flex-start
+  align-items: flex-start
+
+// T R A N S L A T E S
+=translateX($val)
+  transform: translateX($val)
+=translateY($val)
+  transform: translateY($val)
+
+// T R A M S F O R M
+=scale($val)
+  transform: scale($val)
+  -webkit-transform: scale($val)
+=transform-origin($val)
+  transform-origin: $val;
+  -webkit-transform-origin: $val;
+=o-flow($val)
+  overflow: $val
+=ltr-space($val)
+  letter-spacing: $val
+
+// C E N T E R I N G
+=v-center($pos)
+  position: $pos
+  top: 50%
+  transform: translateY(-50%)
+=h-center($pos)
+  position: $pos
+  left: 50%
+  transform: translateX(-50%)
+=v-h-center($pos)
+  position: $pos
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+// A L I G N M E N T S
+=a-center
+  text-align: center
+=a-left
+  text-align: left
+=a-right
+  text-align: right
+
+// P A D D I N G S
+=p($val)
+  padding: $val
+=pt($val)
+  padding-top: $val
+=pr($val)
+  padding-right: $val
+=pb($val)
+  padding-bottom: $val
+=pl($val)
+  padding-left: $val
+
+// M A R G I N S
+=m($val)
+  margin: $val
+=mt($val)
+  margin-top: $val
+=mr($val)
+  margin-right: $val
+=mb($val)
+  margin-bottom: $val
+=ml($val)
+  margin-left: $val
+
+// B O R D E R S
+=b($val)
+  border: $val
+=bt($val)
+  border-top: $val
+=br($val)
+  border-right: $val
+=bb($val)
+  border-bottom: $val
+=bl($val)
+  border-left: $val
+
+// F L O A T S
+=f-right
+  float: right
+=f-left
+  float: left
+=radius($val)
+  border-radius: $val
+
+// T R A N S I T I O N S
+=transition($data)
+  -webkit-transition: $data
+  -ms-transition: $data
+  -moz-transition: $data
+  -o-transition: $data
+  transition: $data
+
+// B O X   S H A D O W S
+=shadow-1
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2) !important
+=shadow-2
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 3px -2px rgba(0, 0, 0, 0.4) !important
+=shadow-3
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4) !important
+=shadow-4
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.4) !important
+=shadow-5
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4) !important
+=shadow-6
+  box-shadow: 0 12px 16px 1px rgba(0, 0, 0, 0.14), 0 4px 22px 3px rgba(0, 0, 0, 0.12), 0 6px 7px -4px rgba(0, 0, 0, 0.4) !important
+=shadow-7
+  text-shadow: 0px 2px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1) !important
+
+
+// B A C K G R O U N D   I M A G E
+=bg-img($url)
+  background-image: url($url)
+  +bg-img-attr
+=bg-img-attr
+  +bg-img-rep(no-repeat)
+  +bg-img-origin(content-box)
+  +bg-img-size(cover)
+  +bg-img-pos(center, center)
+=bg-img-rep($rep)
+  background-repeat: $rep
+=bg-img-origin($origin)
+  background-origin: $origin
+=bg-img-size($size)
+  background-size: $size
+=bg-img-pos($param1, $param2)
+  background-position: ($param1, $param2)
+=brightness($val)
+  filter: brightness($val)
+=grayscale($val)
+  filter: grayscale($val)
