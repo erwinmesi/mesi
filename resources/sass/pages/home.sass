@@ -24,6 +24,15 @@
       .pipe
         +ml(10px)
         +mr(10px)
+        +none
+        @media screen and (min-width: 768px)
+          +inline-block
+      a
+        +mt(5px)
+        +mb(5px)
+        +block
+        @media screen and (min-width: 768px)
+          +inline-block
       .link-item
         +mt(10px)
         +mb(10px)

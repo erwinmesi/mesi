@@ -85,6 +85,25 @@ body,
 #home-page .content .links .pipe {
   margin-left: 10px;
   margin-right: 10px;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  #home-page .content .links .pipe {
+    display: inline-block;
+  }
+}
+
+#home-page .content .links a {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  #home-page .content .links a {
+    display: inline-block;
+  }
 }
 
 #home-page .content .links .link-item {
