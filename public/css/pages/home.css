@@ -82,12 +82,17 @@ body,
   list-style-type: none;
 }
 
+#home-page .content .links .pipe {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 #home-page .content .links .link-item {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-#home-page .content .links .link-item a {
+#home-page .content .links .link-item a.contact {
   display: block;
 }
 
@@ -101,6 +106,6 @@ body,
 
 #home-page .content .links .link-item small.caption {
   position: relative;
-  top: -5px;
+  bottom: -5px;
 }
 
