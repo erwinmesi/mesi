@@ -2,9 +2,36 @@
 
 #home-page
   +bg($dark)
-  .app-name
-    +m(0)
-    +clr($whitesmoke)
+  +square(100%)
+  .content
     +v-h-center(absolute)
-    text-transform: lowercase
-  +h(100vh)
+    @media screen and (min-width: 768px)
+      width: 750px
+    .identity
+      +p(40px 0)
+      +a-center
+      .app-name
+        +clr($whitesmoke)
+        text-transform: lowercase
+        +m(20px 0 0 0)
+        +f-size(3em)
+      .title
+        +block
+    .links
+      +p(0)
+      +a-center
+      list-style-type: none
+      .link-item
+        +mt(10px)
+        +mb(10px)
+        a
+          +block
+        &.upwork
+          img
+            +square(16px)
+            +radius(50%)
+            +mb(3px)
+            +mr(4px)
+        small.caption
+            +rel
+            top: -5px

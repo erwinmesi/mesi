@@ -1,4 +1,6 @@
 @import '~bootstrap/dist/css/bootstrap.min.css'
+@import '~font-awesome/css/font-awesome.min.css'
+@import '~toastr/build/toastr.min.css'
 
 h1, h2, h3, h4, h5, h6, p, label, div, span, ul, li, a
   +saira
@@ -6,3 +8,9 @@ h1, h2, h3, h4, h5, h6, p, label, div, span, ul, li, a
   
 [v-cloak]
   +none
+
+a.hover-only
+  &:hover,
+  &:active,
+  &:focus
+  +clr(unset !important)
