@@ -1,6 +1,8 @@
 @import './../app'
 
 #home-page
+  +user-drag(none)
+  +user-select(none)
   +bg($dark)
   +square(100%)
   .content
@@ -9,23 +11,13 @@
       width: 750px
     .identity
       +p(40px 0)
-      +a-center
       .logo
         width: 170px 
         +m(20px 0 5px 0)
         +f-size(4.5em)
-      .title
-        +block
     .links
       +p(0)
-      +a-center
       list-style-type: none
-      .pipe
-        +ml(10px)
-        +mr(10px)
-        +none
-        @media screen and (min-width: 768px)
-          +inline-block
       a
         +mt(5px)
         +mb(5px)
@@ -37,12 +29,9 @@
         +mb(10px)
         a.contact
           +block
-        &.upwork
-          img
-            +square(14px)
-            +radius(50%)
-            +mb(3px)
-            +mr(4px)
+        img, i.fa
+          +h(32px)
+          +m(10px)
         small.caption
           +rel
           bottom: -5px

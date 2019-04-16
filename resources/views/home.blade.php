@@ -8,38 +8,31 @@
   <div id="home-page">
     <div class="container">
       <div class="content">
-        <div class="identity">
-          <img class="logo" src="/images/logo.png" alt="{{ APP_NAME }} Logo">
-          <small class="title">Full-Stack Web Developer</small>
+        <div class="identity text-center">
+          <img draggable="false" class="logo" src="/images/logo.png" alt="{{ APP_NAME }} Logo">
         </div>
-        <ul class="links row">
-          <li class="link-item upwork col-12">
-            <a class="hover-only" href="#">
-              About me
-            </a>
-            <span class="pipe">|</span>
-            <a class="hover-only" href="#">
-              Blog
-            </a>
-            <span class="pipe">|</span>
-            <a class="hover-only" href="#">
-              Projects
-            </a>
-          </li>
-          <li class="link-item upwork col-md-4 offset-md-2">
-            <small class="caption">
-              <img src="/images/upwork.png" alt="{{ APP_NAME }} Upwork account">
-              Hire me at Upwork
-            </small>
+        <div class="text-center mb-4">
+          <small class="d-block">Erwin Mesias</small>
+          <small class="d-block">Full-Stack Web Developer</small>
+        </div>
+        <ul class="links row text-center">
+          <li class="link-item upwork col-md-4">
             <a class="hover-only contact" href="{{ MESI_UPWORK }}" target="_blank" rel="noopener">
-              upwork.com/fl/erwinmesias
+              <img draggable="false" src="/images/upwork.png" alt="{{ APP_NAME }} Upwork account">
             </a>
+            <small class="caption">Hire me.</small>
           </li>
           <li class="link-item mail col-md-4">
-            <small class="caption"><i class="fa fa-envelope mr-2"></i>Contact me at</small>
             <a class="hover-only contact" href="mailto:{{ MESI_GMAIL }}" target="_blank" rel="noopener">
-              {{ MESI_GMAIL }}
+              <img draggable="false" src="/images/gmail.png" alt="{{ APP_NAME }} Gmail account">
             </a>
+            <small class="caption">Send me an email.</small>
+          </li>
+          <li class="link-item linkedin col-md-4">
+            <a class="hover-only contact" href="{{ MESI_LINKEDIN }}" target="_blank" rel="noopener">
+              <i class="fa fa-linkedin fa-2x"></i>
+            </a>
+            <small class="caption">Connect with me.</small>
           </li>
         </ul>
       </div>
